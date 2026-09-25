@@ -1,0 +1,2 @@
+import type { Purpose, PropertyType } from './common';
+export interface Property { id:string; slug:string; title:string; location:string; city:string; price:number; priceType:Purpose; type:PropertyType; bedrooms:number|null; bathrooms:number|null; areaSqFt:number; furnishing:'Unfurnished'|'Semi-furnished'|'Furnished'; images:string[]; amenities:string[]; features:string[]; description:string; featured:boolean; agentId:string; createdAt:string; }

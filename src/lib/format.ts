@@ -1,0 +1,2 @@
+export const formatCurrency=(value:number,type:'buy'|'rent')=> { const base=value>=10000000?`₹${(value/10000000).toFixed(value%10000000?2:0)} Cr`:value>=100000?`₹${(value/100000).toFixed(value%100000?2:0)} Lakh`:`₹${new Intl.NumberFormat('en-IN').format(value)}`; return type==='rent'?`${base}/month`:base; };
+export const formatArea=(value:number)=>`${new Intl.NumberFormat('en-IN').format(value)} sq. ft.`;

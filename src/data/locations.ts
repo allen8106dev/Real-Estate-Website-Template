@@ -1,0 +1,2 @@
+import { siteConfig } from '@/config/siteConfig';
+export const locations=siteConfig.serviceAreas.map((name,i)=>({name,count:[42,38,51,29,35,26,19][i]??15,image:["photo-1600585154340-be6161a56a0c","photo-1600607687920-4e2a09cf159d","photo-1600607688960-e095ff83135c","photo-1600573472591-ee6b68d14c68","photo-1500382017468-9049fed747ef","photo-1600585152915-d208bec867a1","photo-1497366754035-f200968a6e72"][i]}));

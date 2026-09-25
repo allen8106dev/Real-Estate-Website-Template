@@ -1,0 +1,2 @@
+import { useEffect } from 'react'; import { siteConfig } from '@/config/siteConfig';
+export function SEO({title,description}:{title?:string;description?:string}){useEffect(()=>{document.title=title?`${title} | ${siteConfig.companyName}`:siteConfig.seo.defaultTitle; const meta=document.querySelector('meta[name="description"]')||document.head.appendChild(document.createElement('meta'));meta.setAttribute('name','description');meta.setAttribute('content',description||siteConfig.seo.defaultDescription)},[title,description]);return null}
